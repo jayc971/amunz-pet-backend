@@ -1,0 +1,49 @@
+{
+  "name": "amunz-pet-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "console": "strapi console",
+    "deploy": "strapi deploy",
+    "dev": "strapi develop",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "upgrade": "npx @strapi/upgrade latest",
+    "upgrade:dry": "npx @strapi/upgrade latest --dry",
+    "import:firebase": "npx ts-node src/scripts/firebase-to-strapi.ts"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.33.4",
+    "@strapi/plugin-users-permissions": "5.33.4",
+    "@strapi/provider-upload-cloudinary": "^5.33.4",
+    "@strapi/strapi": "5.33.4",
+    "better-sqlite3": "12.4.1",
+    "pg": "^8.11.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "firebase-admin": "^12.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20.0.0 <=24.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "047636a5-8984-43df-8e4e-aa9e55432ae8",
+    "installId": "0f066c028189c9291884574241048ce7ea6741d55705888764a4bb42932d5e1e"
+  },
+  "overrides": {
+    "file-type": "16.5.4"
+  }
+}
