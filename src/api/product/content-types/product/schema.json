@@ -53,9 +53,9 @@
     },
     "category": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::category.category",
-      "inversedBy": "products"
+      "mappedBy": "products"
     },
     "brand": {
       "type": "relation",
@@ -101,6 +101,10 @@
     "isBestSeller": {
       "type": "boolean",
       "default": false
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
     }
   }
 }
